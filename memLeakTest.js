@@ -78,7 +78,7 @@ function getCustomBufferGetter() {
 }
 
 async function readFromFileIntoBuffer(buffer) {
-    const data = fs.readFileSync('test2.txt', { encoding:'utf8', flag:'r' });
+    const data = fs.readFileSync('fileToReadFrom.txt', { encoding:'utf8', flag:'r' });
     buffer.writeString(data);
 }
 
